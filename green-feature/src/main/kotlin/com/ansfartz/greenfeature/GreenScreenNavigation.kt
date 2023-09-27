@@ -1,4 +1,4 @@
-package com.ansfartz.multimoduleapp.features.greenfeature
+package com.ansfartz.greenfeature
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder

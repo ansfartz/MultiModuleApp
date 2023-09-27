@@ -8,17 +8,14 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.ansfartz.multimoduleapp.features.bluefeature.BlueScreen
-import com.ansfartz.multimoduleapp.features.bluefeature.blueScreen
-import com.ansfartz.multimoduleapp.features.bluefeature.navigateToBlueScreen
-import com.ansfartz.multimoduleapp.features.greenfeature.GreenScreen
-import com.ansfartz.multimoduleapp.features.greenfeature.greenScreen
-import com.ansfartz.multimoduleapp.features.greenfeature.navigateToGreenScreen
-import com.ansfartz.multimoduleapp.features.redfeature.RedScreen
-import com.ansfartz.multimoduleapp.features.redfeature.navigateToRedScreen
-import com.ansfartz.multimoduleapp.features.redfeature.redScreen
-import com.ansfartz.multimoduleapp.features.redfeature.redScreenRoute
+import com.ansfartz.bluefeature.blueScreen
+import com.ansfartz.bluefeature.navigateToBlueScreen
+import com.ansfartz.greenfeature.greenScreen
+import com.ansfartz.greenfeature.navigateToGreenScreen
 import com.ansfartz.multimoduleapp.ui.theme.MultiModuleAppTheme
+import com.ansfartz.redfeature.navigateToRedScreen
+import com.ansfartz.redfeature.redScreen
+import com.ansfartz.redfeature.redScreenRoute
 
 
 @Composable

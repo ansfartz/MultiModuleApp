@@ -1,4 +1,4 @@
-package com.ansfartz.multimoduleapp.features.redfeature
+package com.ansfartz.redfeature
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder

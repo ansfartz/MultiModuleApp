@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ansfartz.multimoduleapp.navigation.TopNavHost
 import com.ansfartz.multimoduleapp.ui.theme.MultiModuleAppTheme
+import com.ansfartz.redfeature.redScreenRoute
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    TopNavHost(startDestination = "redscreen_route")
+                    TopNavHost(startDestination = redScreenRoute)
                 }
             }
         }

@@ -15,4 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "MultiModuleApp"
 include(":app")
- 
+include(":blue-feature")
+include(":red-feature")
+include(":green-feature")

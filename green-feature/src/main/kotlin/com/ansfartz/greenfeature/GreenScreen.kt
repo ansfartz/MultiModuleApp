@@ -1,4 +1,4 @@
-package com.ansfartz.multimoduleapp.features.bluefeature
+package com.ansfartz.greenfeature
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -14,13 +15,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.ansfartz.multimoduleapp.ui.theme.MultiModuleAppTheme
 
 @Composable
-fun BlueScreen(
+fun GreenScreen(
     modifier: Modifier = Modifier,
     onRedButtonClick: () -> Unit = {},
-    onGreenButtonClick: () -> Unit = {},
+    onBlueButtonClick: () -> Unit = {},
 ) {
     Box(
         modifier = modifier
@@ -45,17 +45,6 @@ fun BlueScreen(
 
             Button(
                 modifier = modifier.width(100.dp),
-                onClick = { onGreenButtonClick() },
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = Color(102, 207, 84, 255),
-                    contentColor = Color(255, 255, 255, 255),
-                )
-            ) {
-                Text("Green")
-            }
-
-            Button(
-                modifier = modifier.width(100.dp),
                 onClick = {  },
                 enabled = false,
                 colors = ButtonDefaults.buttonColors(
@@ -63,6 +52,17 @@ fun BlueScreen(
                     contentColor = Color.White,
                     disabledContainerColor = Color(175, 175, 175, 255),
                     disabledContentColor = Color(90, 90, 90, 255),
+                )
+            ) {
+                Text("Green")
+            }
+
+            Button(
+                modifier = modifier.width(100.dp),
+                onClick = { onBlueButtonClick() },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(84, 178, 207, 255),
+                    contentColor = Color(255, 255, 255, 255),
                 )
             ) {
                 Text("Blue")
@@ -76,8 +76,8 @@ fun BlueScreen(
     showBackground = true
 )
 @Composable
-fun BlueScreenPreview() {
-    MultiModuleAppTheme {
-        BlueScreen()
+fun GreenScreenPreview() {
+    Surface {
+        GreenScreen()
     }
 }
